@@ -12,10 +12,18 @@ Construida a partir de la Guía Docente 2026-2027 de la asignatura 949 Control M
 
 ## Qué hace
 
-- **Práctica adaptativa** por los 11 resultados de aprendizaje (RA) de la guía: 42 preguntas en tres idiomas y 3 generadores de problemas con solución calculada por código (ley de Hick-Hyman, ley de Fitts, error constante y absoluto). Diagnóstico inicial que recorre los 11 RA, repetición espaciada (10 min, 1, 3, 7, 16 y 35 días), intercalado, prioridad a la unidad de la semana según el cronograma de la guía y a los errores cometidos con seguridad. Cada pregunta explica por qué se ha elegido.
+- **Práctica adaptativa** por los 11 resultados de aprendizaje (RA) de la guía: 54 preguntas en tres idiomas (12 nuevas en los RA 01, 08, 09 y 011 y en los niveles analizar, evaluar y crear), 3 generadores de problemas con solución calculada por código (ley de Hick-Hyman, ley de Fitts, error constante y absoluto) y **preguntas calculadas con los propios datos del laboratorio** de cada estudiante. Diagnóstico inicial que recorre los 11 RA, repetición espaciada (10 min, 1, 3, 7, 16 y 35 días), intercalado, prioridad a la unidad de la semana según el cronograma de la guía y a los errores cometidos con seguridad. Cada pregunta explica por qué se ha elegido.
 - **Pregunta de seguridad** antes de comprobar (seguro / dudo / adivino) y tabla de calibración.
 - **Modelo de dominio por RA** tipo Elo, con olvido por el tiempo, determinista y explicable (mismos eventos → mismo estado).
 - **Laboratorio en el navegador** con predicción previa, medición, resultados calculados por código y reflexión: tiempo de reacción simple y de elección (Donders, recta de Hick-Hyman), ley de Fitts (tapping recíproco, recta TM-ID y rendimiento en bits/s), anticipación-coincidencia (EC, EA, EV y E total), sincronización-continuación (CV, deriva, autocorrelación lag-1 de Wing y Kristofferson, asincronía), fatiga (30 s de tapping por bloques de 5 s) y fotogrametría 2D (ángulos articulares con ratón o teclado; la foto no sale del navegador ni se guarda).
+- **Novedades de la versión 1.1.0 en la práctica:** en una de cada tres preguntas se responde primero de memoria y después se ven las opciones; ejemplos resueltos que se retiran a medida que se acierta (Hick, Fitts, errores); autoexplicación de una línea tras un error cometido con seguridad; y un **punto de control** de 12 preguntas antes de cada una de las tres fases de la evaluación continua, con plan de repaso por RA.
+- **Cuatro laboratorios nuevos (v1.1.0):**
+  - *El móvil como laboratorio*: con el acelerómetro del teléfono, oscilación postural con ojos abiertos, cerrados y en doble tarea (cociente de Romberg y coste de la doble tarea), temblor antes y después de fatigar, y variabilidad de un gesto.
+  - *Transición de fase*: tapping bimanual en antifase con un metrónomo que acelera de 1 a 3 Hz; el código calcula la fase relativa, la frecuencia crítica y el aumento de la variabilidad antes del salto (modelo de Haken, Kelso y Bunz).
+  - *Anticipa al lanzador*: paradigma de oclusión temporal con un lanzador animado por código (con fintas) o con vídeos del profesorado, que se marcan y empaquetan en la propia app sin salir del navegador; curva de acierto por punto de corte.
+  - *El experimento de la clase*: asignación al azar a práctica constante o variable en una tarea de lanzamiento por impulso, retención y transferencia a partir de 24 h; el panel del profesorado compara los grupos (EA medio y g de Hedges).
+- **Duelo de modelos (v1.1.0):** el estudiante explica sus propios datos de laboratorio con un modelo y la IA defiende otro; el código verifica la cita literal del argumento y marca las cifras que la IA usa y no están en sus datos.
+- **Preguntas creadas por el alumnado (v1.1.0):** redacción ligada a un RA y un nivel, revisión por pares, aprobación del profesorado y paquete que entra en la práctica de la clase.
 - **Clínica de corrección**: tres casos prácticos (anticipación, variabilidad, fatiga) con cuatro criterios. Sin IA, el código detecta los conceptos de cada criterio en la respuesta. Con la clave de cada persona, la IA comenta cada criterio citando literalmente la respuesta; el código verifica cada cita, rebaja a «sin evidencia» lo que la IA da por logrado sin cita real y elimina cualquier nota o calificación.
 - **Simulacro** tipo test con la regla de la guía (cada fallo resta 1/(n−1)), nota con y sin penalización, detalle por RA y valor esperado de contestar al azar.
 - **Progreso**: dominio por RA, calibración, cronograma, informe Word, copia de seguridad y fichero anónimo (seudónimo) para el profesorado.
@@ -33,6 +41,7 @@ Todo se guarda en el navegador (IndexedDB). Solo si se pide feedback de IA sale 
 ## Límites
 
 - El banco de preguntas y los casos se han redactado para esta app a partir de los temas de la guía y la bibliografía clásica del área: **están pendientes de revisión por el profesorado** antes de usarlos para evaluar.
+- El laboratorio del móvil es acelerometría, no una plataforma de fuerzas: cada teléfono muestrea a una frecuencia distinta y en iPhone hay que conceder permiso. El lanzador animado es un estímulo sintético; para estudiar la anticipación real hacen falta vídeos con el consentimiento de las personas grabadas. El experimento de la clase es una actividad docente; publicar sus resultados requiere aprobación ética previa.
 - Los tiempos del laboratorio dependen del navegador, el teclado y la pantalla (decenas de milisegundos): sirven para comparar condiciones en el mismo dispositivo, no valores absolutos entre personas. No es un equipo de laboratorio.
 - La estimación de dominio es inestable con pocas respuestas y no es una calificación.
 - La IA puede equivocarse: el código comprueba sus citas, no su criterio pedagógico.
@@ -56,7 +65,7 @@ ORCID: Fernando Borrás Rocher [0000-0002-5519-4573](https://orcid.org/0000-0002
 
 ## Cómo citar
 
-Borrás Rocher, F. y Moreno Hernández, F. J. (2026). *ControlMotorIA* (v1.0.0) [Software]. DOI: [10.5281/zenodo.23990315](https://doi.org/10.5281/zenodo.23990315)
+Borrás Rocher, F. y Moreno Hernández, F. J. (2026). *ControlMotorIA* (v1.1.0) [Software]. DOI: [10.5281/zenodo.23990315](https://doi.org/10.5281/zenodo.23990315)
 
 ## Licencia
 
