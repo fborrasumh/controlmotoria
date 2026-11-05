@@ -4,6 +4,8 @@ Laboratorio y práctica adaptativa de Control Motor (UMH 949). Aplicación web d
 
 **Usar la app:** https://fborrasumh.github.io/controlmotoria/
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23990315.svg)](https://doi.org/10.5281/zenodo.23990315)
+
 **Idiomas:** español (por defecto), inglés y portugués; selector en la barra superior (o `?lang=en` / `?lang=pt` en la URL).
 
 Construida a partir de la Guía Docente 2026-2027 de la asignatura 949 Control Motor (Grado en Ciencias de la Actividad Física y del Deporte, Facultad de Ciencias Sociosanitarias, Universidad Miguel Hernández de Elche).
@@ -54,7 +56,7 @@ ORCID: Fernando Borrás Rocher [0000-0002-5519-4573](https://orcid.org/0000-0002
 
 ## Cómo citar
 
-Borrás Rocher, F. y Moreno Hernández, F. J. (2026). *ControlMotorIA* (v1.0.0) [Software]. (DOI en trámite)
+Borrás Rocher, F. y Moreno Hernández, F. J. (2026). *ControlMotorIA* (v1.0.0) [Software]. DOI: [10.5281/zenodo.23990315](https://doi.org/10.5281/zenodo.23990315)
 
 ## Licencia
 
